@@ -10,7 +10,7 @@ export const Menu: React.FC<{total: number}> = ({total}) => {
     <ColumnBlock>
       {navData.length > 0 &&
         navData.map((item, index) => (
-          <StyledLink key={index} to={`/${item.toLowerCase()}`}>
+          <StyledLink key={index} to={`/kweek/${item.toLowerCase()}`}>
             <Item item={item} path={path} total={total} />
           </StyledLink>
         ))}
