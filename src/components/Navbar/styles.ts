@@ -125,7 +125,15 @@ export const ThemeContainer = styled.div`
 export const Label = styled.div`
   margin-left: 5px;
   font-size: 14px;
-  color: ${(props) => props.theme.gray};
+  color: ${(props) => props.theme.white};
   font-family: Montserrat, sans-serif;
   font-weight: 600;
+  width: max-content;
+  padding: 0 8px;
+  height: 20px;
+  border-radius: 100%;
+  background: ${(props) => props.theme.purple};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

@@ -4,7 +4,6 @@ import {
   FullName,
   PersonalContainer,
   InfoContainer,
-  Username,
   Block,
   StyledLink,
 } from './styles';
@@ -15,8 +14,6 @@ import {FullUserType} from '../../../types';
 import {routes} from '../../../constants/routes';
 
 export const FriendItem: React.FC<FullUserType & {onFollow: () => void; onUnfollow: () => void}> = ({
-  firstName,
-  lastName,
   username,
   avatar,
   isOnline,
@@ -41,9 +38,8 @@ export const FriendItem: React.FC<FullUserType & {onFollow: () => void; onUnfoll
           </Block>
           <InfoContainer>
             <FullName>
-              {firstName} {lastName}
+              {username}
             </FullName>
-            <Username>@{username}</Username>
           </InfoContainer>
         </PersonalContainer>
       </StyledLink>

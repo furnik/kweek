@@ -26,6 +26,7 @@ interface ItemProps {
 }
 
 export const Item: React.FC<ItemProps> = ({path, item, onClick, total}) => {
+  console.log(total);
   return (
     <NavItem onClick={onClick}>
       <NavIcon />

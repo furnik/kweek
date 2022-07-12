@@ -13,4 +13,7 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
     background: ${({theme}) => theme.primaryBg};
     overflow: hidden;
   }
+  a {
+    text-decoration: none;
+  }
 `;

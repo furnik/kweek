@@ -9,7 +9,6 @@ export const Wrapper = styled.div`
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   @media (max-width: 769px) {
     width: 100%;
     border-radius: 0;
@@ -18,11 +17,12 @@ export const Wrapper = styled.div`
 
 export const MessageContainer = styled.div`
   width: 100%;
-  height: calc(100% - 140px);
+  height: calc(100% - 60px);
   display: flex;
   flex-direction: column-reverse;
   padding: 0;
-  margin: 10px 0;
+  box-sizing: border-box;
+  margin: 0 0 120px;
   gap: 10px;
   position: relative;
   overflow-y: scroll;
@@ -104,6 +104,8 @@ export const InputBarWrapper = styled.div`
   padding: 0 20px;
   gap: 10px;
   background-color: ${(props) => props.theme.secondaryBg};
+  position: fixed;
+  bottom: 0;
   @media (max-width: 769px) {
     padding: 0 10px;
   }
@@ -133,5 +135,8 @@ export const MessageInput = styled.textarea`
     font-size: 14px;
     line-height: 14px;
     font-family: Montserrat, sans-serif;
+  }
+  &:focus {
+    outline: none;
   }
 `;

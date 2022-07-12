@@ -19,7 +19,7 @@ interface Props {
 }
 
 export const Friends: React.FC<Props> = ({friends, loading, onFollow, search, onSearch, all, onUnfollow}) => {
-  const [activeTab, setActiveTab] = useState(Tabs.ALL);
+  const [activeTab, setActiveTab] = useState(Tabs.FRIENDS);
   const [data, setData] = useState<Array<UserType>>([]);
   const [user] = useRecoilState(currentUser);
 
