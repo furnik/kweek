@@ -22,7 +22,7 @@ export const MessageContainer = styled.div`
   flex-direction: column-reverse;
   padding: 0;
   box-sizing: border-box;
-  margin: 0 0 120px;
+  margin: 10px 0;
   gap: 10px;
   position: relative;
   overflow-y: scroll;
@@ -33,6 +33,7 @@ export const MessageContainer = styled.div`
   }
   @media (max-width: 769px) {
     padding: 10px;
+    margin: 0 0 120px;
   }
 `;
 
@@ -104,10 +105,10 @@ export const InputBarWrapper = styled.div`
   padding: 0 20px;
   gap: 10px;
   background-color: ${(props) => props.theme.secondaryBg};
-  position: fixed;
-  bottom: 0;
   @media (max-width: 769px) {
     padding: 0 10px;
+    position: fixed;
+    bottom: 0;
   }
 `;
 
