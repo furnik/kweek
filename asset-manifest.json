@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/kweek/static/js/main.935c38b3.js",
+    "main.js": "/kweek/static/js/main.52d85f05.js",
     "static/media/unknown.png": "/kweek/static/media/unknown.a8bf4be1d70e9f14ef3e.png",
     "static/media/edit-button.png": "/kweek/static/media/edit-button.3c7c84f0772b01e58560.png",
     "index.html": "/kweek/index.html",
-    "main.935c38b3.js.map": "/kweek/static/js/main.935c38b3.js.map"
+    "main.52d85f05.js.map": "/kweek/static/js/main.52d85f05.js.map"
   },
   "entrypoints": [
-    "static/js/main.935c38b3.js"
+    "static/js/main.52d85f05.js"
   ]
 }
