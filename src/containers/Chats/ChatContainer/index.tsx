@@ -9,7 +9,7 @@ export const ChatContainer = () => {
   const path = useLocation().pathname;
   const [{id}] = useRecoilState(currentUser);
   const {refetch: chatsRefetch} = useGetUserChats(id);
-  const {data, loading, refetch} = useGetChat(path.split('/')[2], id);
+  const {data, loading, refetch} = useGetChat(path.split('/')[3], id);
 
   const nahdleRefetch = () => {
     chatsRefetch();

@@ -9,7 +9,7 @@ import {currentUser} from '../../App';
 export const ProfileContainer = () => {
   const [viewer] = useRecoilState(currentUser);
   const path = useLocation().pathname;
-  const {data, loading, refetch} = useGetUser(path.split('/')[2], viewer.id) || {} as UserType;
+  const {data, loading, refetch} = useGetUser(path.split('/')[3], viewer.id) || {} as UserType;
   const {onFollow} = useFollow(refetch);
   const {onUnfollow} = useUnfollow(refetch);
   return <Profile loading={loading} onFollow={onFollow} onUnfollow={onUnfollow} {...data} />;
